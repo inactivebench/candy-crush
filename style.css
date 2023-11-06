@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(images/background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  max-height: 100vh;
+}
+.main {
+  max-width: 1128px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 3rem;
+  font-family: Agbalumo;
+  text-transform: capitalize;
+  color: black;
+  line-height: 1.1;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.container {
+  margin-top: 5vh;
+  gap: 3rem;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+}
+.board {
+  padding: 1em 1.5em;
+  margin: 0.5em 0px;
+  /* background: rgb(252, 157, 154); */
+  background: rgb(249, 205, 173);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
+  border-radius: 5%;
+}
+.score-board,
+.move-board {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  gap: 0.25em;
+  text-transform: capitalize;
+  align-items: first baseline;
+}
+p {
+  font-size: 2rem;
+}
+.candy-grid {
+  /* change back to 35rem & remove border*/
+  height: 36em;
+  width: 36em;
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 0.5px solid black; */
+  border-radius: 2%;
+  padding: 0.4em;
+  background: rgba(150, 169, 216, 100);
+  backdrop-filter: blur(0.2rem) saturate(100%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
+}
+
+.candy-grid div {
+  height: 4.375em;
+  width: 4.375em;
+  background: no-repeat center;
+}
